@@ -1,3 +1,0 @@
-# MachineLearning
-
-ejercicio en clase 
