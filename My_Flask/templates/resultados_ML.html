@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado de la Predicción</h1>
+        <p>Préstamo Aprobado: <strong>{{ "Sí" if resultado == 1 else "No" }}</strong></p>
+        <a href="/descargar" class="btn">Descargar Datos (Excel)</a>
+        <a href="/" class="btn">Volver</a>
+    </div>
+</body>
+</html>
