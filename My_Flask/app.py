@@ -39,3 +39,15 @@ def calculateGrade():
 @app.route("/logistica")
 def logistica():
     return render_template("logistica.html")
+
+@app.route("/menu_modelos")
+def menu_modelos():
+    return render_template("menu_modelos.html")
+
+@app.route("/modelos/<modelo>")
+def mostrar_modelo(modelo):
+    try:
+        return render_template(f"modelos/{modelo}.html")
+    except:
+        return "Modelo no encontrado", 404
+    

@@ -6,9 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix
 import random
 
-# Función para entrenar el modelo
 def entrenar_modelo():
-    # Generación de un conjunto de datos más grande (1000 muestras)
     data = {
         'posicion': [random.uniform(0, 100) for _ in range(1000)],  
         'tiros': [random.randint(0, 15) for _ in range(1000)],  
@@ -66,6 +64,3 @@ def predecir_resultado(modelo, posicion, tiros, tiempo):
         return "Ganar"
     else:
         return "Perder"
-
-
-
